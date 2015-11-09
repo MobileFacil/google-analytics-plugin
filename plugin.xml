@@ -19,8 +19,6 @@
     <clobbers target="navigator.analytics" />
   </js-module>
 
-  <dependency id="cordova-plugin-googleplayservices" />
-
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
       <feature name="GoogleAnalytics">
@@ -46,6 +44,7 @@
     <framework src="CoreData.framework" />
     <framework src="libsqlite3.dylib" />
     <framework src="libz.dylib" />
+    <framework src="com.google.android.gms:play-services-analytics:+" />
   </platform>
 
   <platform name="android">
