@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  id="com.facilinformatica.plugins.googleanalytics"
+  id="com.mobilefacil.plugins.googleanalytics"
   version="0.1.15">
 
   <engines>
@@ -51,7 +51,7 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="GoogleAnalytics">
-        <param name="android-package" value="com.cmackay.plugins.googleanalytics.GoogleAnalyticsPlugin" />
+        <param name="android-package" value="com.mobilefacil.plugins.googleanalytics.GoogleAnalyticsPlugin" />
       </feature>
     </config-file>
 
