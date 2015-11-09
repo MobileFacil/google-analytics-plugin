@@ -1,9 +1,9 @@
 {
-  "name": "com.facilinformatica.plugins.googleanalytics",
+  "name": "com.mobilefacil.plugins.googleanalytics",
   "version": "0.1.15",
   "description": "Plugin for Google Analytics Native SDKs (Android, iOS)",
   "cordova": {
-    "id": "com.facilinformatica.plugins.googleanalytics",
+    "id": "com.mobilefacil.plugins.googleanalytics",
     "platforms": [
       "ios",
       "android"
