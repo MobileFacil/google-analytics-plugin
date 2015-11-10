@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  id="com.mobilefacil.plugins.googleanalytics"
-  version="0.1.16">
+  id="com.facilinformatica.plugins.googleanalytics"
+  version="0.1.15">
 
   <engines>
     <engine name="cordova" version=">=3.0.0" />
@@ -10,7 +10,7 @@
 
   <name>GoogleAnalytics</name>
   <description>Plugin for Google Analytics Native SDKs (Android, iOS)</description>
-  <author>Craig MacKay</author>
+  <author>Fácil Informática</author>
   <license>Apache 2.0</license>
   <keywords>cordova,analytics</keywords>
   <repo>https://github.com/MobileFacil/google-analytics-plugin.git</repo>
@@ -18,6 +18,8 @@
   <js-module src="www/analytics.js" name="GoogleAnalytics">
     <clobbers target="navigator.analytics" />
   </js-module>
+
+  <dependency id="cordova-plugin-googleplayservices" />
 
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
@@ -44,13 +46,12 @@
     <framework src="CoreData.framework" />
     <framework src="libsqlite3.dylib" />
     <framework src="libz.dylib" />
-    <framework src="com.google.android.gms:play-services-analytics:+" />
   </platform>
 
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="GoogleAnalytics">
-        <param name="android-package" value="com.mobilefacil.plugins.googleanalytics.GoogleAnalyticsPlugin" />
+        <param name="android-package" value="com.cmackay.plugins.googleanalytics.GoogleAnalyticsPlugin" />
       </feature>
     </config-file>
 
